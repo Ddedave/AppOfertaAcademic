@@ -1,0 +1,160 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>info</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+        <ion-card>
+            <ion-card-header>
+              Nombre de la materia
+            </ion-card-header>
+            <ion-card-content>
+              {{maestro.Mombre_materia}}
+            </ion-card-content>
+          </ion-card>
+  
+          <ion-card>
+              <ion-card-header>
+                Nombre del maestro
+              </ion-card-header>
+              <ion-card-content *ngIf="maestro.hasOwnProperty('Nombre_maestro')">
+              <p>
+                  {{maestro.Nombre_maestro}}
+              </p>
+              </ion-card-content>
+            </ion-card>
+  
+            <ion-card>
+                <ion-card-header>
+                  NRC
+                </ion-card-header>
+                <ion-card-content *ngIf="maestro.hasOwnProperty('NRC')">
+                    <p>
+                        {{maestro.NRC}}
+                    </p> 
+                </ion-card-content>
+            </ion-card>
+  
+              <ion-card>
+                  <ion-card-header>
+                    Clave de materia
+                  </ion-card-header>
+                  <ion-card-content *ngIf="maestro.hasOwnProperty('clave')">
+                      <p>
+                          {{maestro.clave}}
+                      </p>                                                
+                      </ion-card-content>
+                </ion-card>
+  
+                <ion-card>
+                    <ion-card-header>
+                      Seccion
+                    </ion-card-header>
+                    <ion-card-content *ngIf="maestro.hasOwnProperty('seccion')">
+                        <p>
+                            {{maestro.seccion}}
+                        </p>
+                        </ion-card-content>
+                  </ion-card>
+
+                  <ion-card>
+                      <ion-card-header>
+                        Creditos
+                      </ion-card-header>
+                      <ion-card-content *ngIf="maestro.hasOwnProperty('creditos')">
+                          <p>
+                              {{maestro.creditos}}
+                          </p>
+                          </ion-card-content>
+                    </ion-card>
+
+                    <ion-card>
+                        <ion-card-header>
+                          Cupos
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('cupos')">
+                            <p>
+                                {{maestro.cupos}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                        <ion-card-header>
+                          Cupos disponibles
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('disponibles')">
+                            <p>
+                                {{maestro.disponibles}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                        <ion-card-header>
+                          Sesion
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('ses')">
+                            <p>
+                                {{maestro.ses}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                        <ion-card-header>
+                          Horario
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('hora')">
+                            <p>
+                                {{maestro.hora}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                        <ion-card-header>
+                          Dia(s)
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('dia')">
+                            <p>
+                                {{maestro.dia}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                        <ion-card-header>
+                          Edificio
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('edif')">
+                            <p>
+                                {{maestro.edif}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                        <ion-card-header>
+                          Aula
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('aula')">
+                            <p>
+                                {{maestro.aula}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                        <ion-card-header>
+                          Calendario
+                        </ion-card-header>
+                        <ion-card-content *ngIf="maestro.hasOwnProperty('periodo')">
+                            <p>
+                                {{maestro.periodo}}
+                            </p>
+                            </ion-card-content>
+                      </ion-card>
+  
+  </ion-content>

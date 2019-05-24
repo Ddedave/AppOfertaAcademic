@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Oferta Academica
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="search()">
+        <ion-icon name = "search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-content padding>
+
+  <ion-card *ngFor="let mae of maestros" (click)='info(mae)'>
+   <ion-card-header *ngIf="mae.hasOwnProperty('Mombre_carrera')">
+     {{mae.Mombre_carrera}}
+   </ion-card-header>
+
+   <ion-card-content *ngIf="mae.hasOwnProperty('NRC')">
+      {{mae.NRC}}
+   </ion-card-content>
+
+   <ion-card-content *ngIf="mae.hasOwnProperty('Nombre_maestro')">
+      {{mae.Nombre_maestro}}
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

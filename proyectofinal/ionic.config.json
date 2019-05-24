@@ -1,0 +1,11 @@
+{
+  "name": "",
+  "integrations": {},
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl": "http://127.0.0.1:5000"
+    }
+  ]
+}
